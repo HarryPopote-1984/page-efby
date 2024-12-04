@@ -2,6 +2,8 @@
   "name": "page-efby",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -9,6 +11,7 @@
     "test": "ng test"
   },
   "private": true,
+  "homepage": "http://harrypopote-1984.github.io/page-efby",
   "dependencies": {
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
@@ -22,6 +25,7 @@
     "animate.css": "^3.5.2",
     "aos": "^2.3.4",
     "bootstrap": "^5.0.0",
+    "gh-pages": "^6.2.0",
     "jquery": "^3.4.1",
     "ngx-owl-carousel-o": "^18.0.0",
     "rxjs": "~7.8.0",
