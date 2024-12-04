@@ -1,0 +1,58 @@
+    <!-- Contact Start -->
+    <section id="contacto">
+
+      <div class="container-xxl py-5">
+          <div class="container px-lg-5">
+              <div class="row justify-content-center">
+                  <div class="col-lg-7">
+                      <div class="section-title position-relative text-center mb-5 pb-2" data-aos="fade-up" data-aos-delay="100">
+                          <h6 class="position-relative d-inline text-primary ps-4">Contactanos</h6>
+                          <h2 class="mt-2">Contáctenos para cualquier consulta</h2>
+                      </div>
+                      <div data-aos="fade-up" data-aos-delay="200">
+                        <form [formGroup]="formulario" (ngSubmit)="enviar()" autocomplete="off">
+                          <div class="mb-3">
+                            <label for="nombre" class="form-label"> Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="nombreApellido" formControlName="nombreApellido">
+                            <span *ngIf="isValidField('nombreApellido')" class="text-form text-danger" >{{getFieldError('nombreApellido')}}</span>
+
+                          </div>
+                          <div class="mb-3">
+                            <label for="empresa" class="form-label">Nombre de la empresa</label>
+                            <input type="text" class="form-control" id="empresa" formControlName="empresa">
+                            <span *ngIf="isValidField('empresa')" class="text-form text-danger" >Este campo es requerido</span>
+                          </div>
+                          <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" formControlName="correo">
+                            <span *ngIf="formulario.controls['correo'].getError('required')
+                            && formulario.controls['correo'].touched" class="text-form text-danger" >Este campo es requerido</span>
+                            <span *ngIf="formulario.controls['correo'].getError('email')" class="text-form text-danger" >Solo formato no es un correo</span>
+                          </div>
+                          <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" formControlName="telefono">
+                            <span *ngIf="formulario.controls['telefono'].getError('pattern')" class="text-form text-danger" >El caracter ingresado no es un numero.</span>
+                            <span *ngIf="formulario.controls['telefono'].getError('minlength')" class="text-form text-danger" >Ingresa un minimo de 9 numeros.</span>
+                            <span *ngIf="formulario.controls['telefono'].getError('required')
+                            && formulario.controls['telefono'].touched" class="text-form text-danger" class="text-form text-danger" >Este campo es requerido.</span>
+                          </div>
+                          <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="3" id="mensaje" formControlName="mensaje"></textarea>
+                            <span *ngIf="isValidField('mensaje')" class="text-form text-danger" >Este campo es requerido</span>
+                          </div>
+                          <div class=" d-flex justify-content-end">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+
+                          </div>
+                        </form>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </section>
+  <!-- Contact End -->

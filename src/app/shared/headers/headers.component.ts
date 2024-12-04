@@ -11,11 +11,12 @@ import {
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 
 import AOS from 'aos';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-headers',
   standalone: true,
-  imports: [CommonModule, CarouselModule],
+  imports: [CommonModule, CarouselModule, RouterModule],
   templateUrl: './headers.component.html',
   styleUrl: './headers.component.css',
   encapsulation: ViewEncapsulation.None,

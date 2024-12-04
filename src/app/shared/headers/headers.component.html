@@ -1,32 +1,62 @@
-  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" #navbar>
-    <a href="" class="navbar-brand p-1">
-      <h1 class="ms-0">
-        <img
-          src="./../../../assets/img/logoE.webp"
-          alt="Logo"
-          style="width: 60px; min-height: 60px"
-        />fby
-      </h1>
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarCollapse"
-    >
-      <span class="fa fa-bars"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav ms-auto py-0">
-        <a href="index.html" class="nav-item nav-link">Inicio</a>
-        <a href="about.html" class="nav-item nav-link">Nosotros</a>
-        <a href="service.html" class="nav-item nav-link">Servicios</a>
-        <a href="project.html" class="nav-item nav-link">Proyectos</a>
-        <a href="team.html" class="nav-item nav-link">Team</a>
-        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+  <section id="inicio">
+
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" #navbar>
+      <a href="" class="navbar-brand p-1">
+        <h1 class="ms-0">
+          <img
+            src="./../../../assets/img/logoE.webp"
+            alt="Logo"
+            style="width: 60px; min-height: 60px"
+          />fby
+        </h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a
+          href="index.html"
+          class="nav-item nav-link"
+          aria-current="page"
+          routerLinkActive="router-link-active"
+          [routerLink]="['']" fragment="inicio"
+          >Inicio</a>
+          <a
+          href="about.html"
+          class="nav-item nav-link"
+          [routerLink]="['']" fragment="nosotros"
+          >Nosotros</a>
+          <a
+          href="service.html"
+          class="nav-item nav-link"
+          [routerLink]="['']" fragment="servicios"
+          >Servicios</a>
+          <a
+          href="project.html"
+          class="nav-item nav-link"
+          [routerLink]="['']" fragment="proyectos"
+          >Proyectos</a>
+          <a
+          href="team.html"
+          class="nav-item nav-link"
+          [routerLink]="['']" fragment="team"
+          >Team</a>
+          <a
+          href="contact.html"
+          class="nav-item nav-link"
+          [routerLink]="['']" fragment="contacto"
+          >Contacto</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+
+  </section>
 
   <div class="container-xxl py-5 bg-primary hero-header mb-5">
     <div class="container my-5 py-5 px-lg-5">
