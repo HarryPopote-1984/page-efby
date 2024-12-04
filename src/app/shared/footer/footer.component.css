@@ -1,0 +1,40 @@
+/* Botón principal */
+.back-to-top {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+  right: 20px;  /* Ajusta la distancia desde el borde derecho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Tamaño del botón */
+  height: 60px;
+  background-color: #007bff; /* Color del botón */
+  color: white;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Ajusta el padding-top que afecta al ícono */
+.back-to-top.pt-2 {
+  padding-top: 0; /* Remueve el padding-top */
+}
+
+/* Ícono dentro del botón */
+.back-to-top i {
+  font-size: 24px; /* Tamaño del ícono */
+  transition: transform 0.3s ease; /* Transición para el efecto del hover */
+}
+
+/* Hover del botón */
+.back-to-top:hover {
+  background-color: #0056b3; /* Cambia el color del botón al hacer hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Hover del ícono */
+.back-to-top:hover i {
+  transform: translateY(-3px); /* Mueve la flecha ligeramente hacia arriba */
+}

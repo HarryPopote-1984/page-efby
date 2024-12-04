@@ -1,0 +1,83 @@
+  <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0" #navbar>
+    <a href="" class="navbar-brand p-1">
+      <h1 class="ms-0">
+        <img
+          src="./../../../assets/img/logoE.webp"
+          alt="Logo"
+          style="width: 60px; min-height: 60px"
+        />fby
+      </h1>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+    >
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-0">
+        <a href="index.html" class="nav-item nav-link">Inicio</a>
+        <a href="about.html" class="nav-item nav-link">Nosotros</a>
+        <a href="service.html" class="nav-item nav-link">Servicios</a>
+        <a href="project.html" class="nav-item nav-link">Proyectos</a>
+        <a href="team.html" class="nav-item nav-link">Team</a>
+        <a href="contact.html" class="nav-item nav-link">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-xxl py-5 bg-primary hero-header mb-5">
+    <div class="container my-5 py-5 px-lg-5">
+      <div class="row g-5 py-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="text-white mb-4 animated zoomIn">
+            Hacemos de la tecnología tu mejor aliado.
+          </h1>
+          <p class="text-white pb-3 animated zoomIn">
+            En Efby, transformamos la tecnología en tu mejor aliada. Ofrecemos
+            soluciones innovadoras en desarrollo móvil, web, soporte técnico,
+            servicios en la nube y sistemas BPM para llevar tu negocio al
+            siguiente nivel.
+          </p>
+          <!-- <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Free Quote</a> -->
+          <a
+            href="#"
+            class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight"
+            >Contactanos</a
+          >
+        </div>
+
+
+        <div class="col-lg-6 mb-4 p-5">
+          <div class="bg-primary" data-aos="fade-up" data-aos-delay="100">
+            <owl-carousel-o [options]="customOptions" >
+
+              @for (slide of slides; track $index) {
+              <ng-template carouselSlide class="image-carousel">
+                <div class="testimonial-item bg-transparent text-white">
+                  <div class="d-flex align-items-center justify-content-center">
+                    <img
+                      class="img-fluid flex-shrink-0 rounded"
+                      [src]="slide.src"
+                      [alt]="slide.alt"
+                      style="width: 400px; height: 350px"
+                    />
+                  </div>
+                </div>
+              </ng-template>
+              }
+            </owl-carousel-o>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
