@@ -64,17 +64,17 @@ export class HeadersComponent implements OnInit {
   public slides = [
     {
       id: '1',
-      src: './../../../assets/img/carrucel_superio/imagen-1.jpeg',
+      src: 'assets/img/carrucel_superio/imagen-1.jpeg',
       alt: 'Slide 1',
     },
     {
       id: '2',
-      src: './../../../assets/img/carrucel_superio/imagen-2.jpeg',
+      src: 'assets/img/carrucel_superio/imagen-2.jpeg',
       alt: 'Slide 2',
     },
     {
       id: '3',
-      src: './../../../assets/img/carrucel_superio/imagen-portada.webp',
+      src: 'assets/img/carrucel_superio/imagen-portada.webp',
       alt: 'Slide 3',
     },
   ];

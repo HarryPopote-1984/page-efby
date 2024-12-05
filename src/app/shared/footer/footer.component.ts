@@ -17,35 +17,35 @@ export class FooterComponent {
   public slides = [
     {
       id: '1',
-      src: './../../../assets/img/portafolio/portfolio-1.jpg',
+      src: 'assets/img/portafolio/portfolio-1.jpg',
       alt: 'Slide 1',
     },
 
     {
       id: '2',
-      src: './../../../assets/img/portafolio/portfolio-2.jpg',
+      src: 'assets/img/portafolio/portfolio-2.jpg',
       alt: 'Slide 2',
     },
 
     {
       id: '3',
-      src: './../../../assets/img/portafolio/portfolio-3.jpg',
+      src: 'assets/img/portafolio/portfolio-3.jpg',
       alt: 'Slide 3',
     },
 
     {
       id: '4',
-      src: './../../../assets/img/portafolio/portfolio-4.jpg',
+      src: 'assets/img/portafolio/portfolio-4.jpg',
       alt: 'Slide 4',
     },
     {
       id: '5',
-      src: './../../../assets/img/portafolio/portfolio-5.jpg',
+      src: 'assets/img/portafolio/portfolio-5.jpg',
       alt: 'Slide 5',
     },
     {
       id: '6',
-      src: './../../../assets/img/portafolio/portfolio-6.jpg',
+      src: 'assets/img/portafolio/portfolio-6.jpg',
       alt: 'Slide 6',
     },
 

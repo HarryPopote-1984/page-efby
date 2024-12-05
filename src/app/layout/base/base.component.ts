@@ -6,10 +6,11 @@ import { NewletterComponent } from "../../components/newletter/newletter.compone
 import { ServiciosEfbyComponent } from "../../components/servicios-efby/servicios-efby.component";
 import { PortafolioComponent } from "../../components/portafolio/portafolio.component";
 import { TeamComponent } from '@/components/team/team.component';
-
-import AOS from 'aos';
 import { ActivatedRoute, NavigationSkipped, Router } from '@angular/router';
 import { ContactoComponent } from '@/components/contacto/contacto.component';
+
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-base',
   standalone: true,
